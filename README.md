@@ -72,5 +72,7 @@ Heartbleed Testing	      nmap -sV -p 443 --script=ssl-heartbleed 192.168.1.0/24
 Find Information about IP address	nmap --script=asn-query,whois,ip-geolocation-maxmind 192.168.1.0/24
 ```
 
-
-
+- Scan port services from 1 to 65535
+```bash
+nmap -sV -p 1-65535 192.168.1.1/24
+```
