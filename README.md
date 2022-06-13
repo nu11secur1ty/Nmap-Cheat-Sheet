@@ -86,3 +86,9 @@ Find Information about IP address	nmap --script=asn-query,whois,ip-geolocation-m
 ```bash
 nmap -sV -p 1-65535 192.168.1.1/24
 ```
+
+- All ports, all service version, simple scripts = just open
+
+```bash
+nmap -p- -sV -sC $IP --open
+```
